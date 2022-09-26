@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* =========================header section css====================== */
+.header .navbar-nav{
+    justify-content: start;
+}
+
+.header .nav-item .nav-link{
+    text-transform: uppercase;
+    padding: 10px;
+}
+.header .navbar-nav li a{
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .navbar-nav li a::after{
+	content:'';
+	width:0;
+	height:3px;
+	left:0;
+	bottom:0;
+	position:absolute;
+	background-color:green;
+	transition:all 0.5s ease-in-out;
+	
+}
+.navbar-nav li a:hover::after{
+	width:100%;
+}
+
+/* ========================heroimg section css================== */
+.heroimg{
+    background-image: linear-gradient(rgb(127, 180, 166,0.5),rgb(127, 180, 166,0.5)), url('../images/heroimg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    background-color: rgb(202, 240, 145,.3);
+}
+
+.heroimg .info{
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroimg .info h2, .heroimg .info h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.heroimg .info p {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+    padding-bottom: 16px;
+}
+
+/* ======================posts section css ================================= */
+.post{
+    padding: 60px 0;
+}
+.post .info-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #006a4d;
+    font-size: 30px;
+}
+.post .info-title-2{
+    font-weight: bold;
+    font-size: 20px;
+    color: #006a4d;
+}
+.post .info-para{
+    font-size: 15px;
+}
+
+.post .post-img{
+    padding-top: 20px;
+}
+
+/* =============speaker section css======================= */
+.speakers{
+    padding: 60px 0;
+    background-color: #006a4d;
+}
+
+.speakers .primary-heading h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.speakers .primary-para p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    width: 88%;
+}
+
+.speakers .speakers-img img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.speakers .speakers-img h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;    
+}
+.speakers .speakers-img p{
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;   
+}
+.btn{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color:#fff;
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+.btn:hover{
+    color: #fff;;
+    background-color: #006a4d;
+    border: 1px solid #fff;
+
+}
+.view-btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ==========================footer section css=========================== */
+.footer {
+    background-color: #3c3c3c;
+    padding: 70px 0;
+}
+.footer .primary-heading h3{
+    color: #fff;
+    font-size: 15px;
+}
+.footer .footer-icon i {
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.footer .second-heading h4{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 16px;
+}
+
+@media all and (min-width:768px){
+    .header .navbar-nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .heroimg .info p{
+        font-size: 60px;
+        font-weight: bold;
+        padding: 20px 0;
+        border-bottom: 2px solid black;
+
+    }
+    .heroimg .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .post{
+        padding: 120px 0;
+    }
+    .post .post-img{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 70vh;
+    }
+    .speakers{
+        padding: 100px 0;
+        background-color: #006a4d;
+    }
+}
